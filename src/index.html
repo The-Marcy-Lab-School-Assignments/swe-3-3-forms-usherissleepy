@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NYC Tech Summit 2026</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <h1>NYC Tech Summit 2026</h1>
+    <p>March 15, 2026 | 9:00 AM - 5:00 PM | Manhattan Conference Center</p>
+  </header>
+
+  <main>
+    <form action="https://formspree.io/f/xaqqvvga" method="POST">
+
+      <h2>Event RSVP</h2>
+      <div class="form-row">
+        <div class="form-group">
+          <label for="firstName">First Name</label>
+          <input id="firstName" type="text" name="firstName" required />
+        </div>
+
+        <div class="form-group">
+          <label for="lastName">Last Name</label>
+          <input id="lastName" type="text" name="lastName" required />
+        </div>
+    </div>
+
+      <div class="form-row">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input id="email" type="email" name="email" required />
+        </div>
+
+        <div class="form-group">
+          <label for="tickets">Number of Tickets</label>
+          <input id="tickets" type="number" name="tickets" value="1" min="1" />
+        </div>
+      </div>
+
+      <div class="form-section">
+        <p class="section-label">Lunch Preference</p>
+
+        <label class="radio-option">
+          <input type="radio" name="lunch" value="Chicken" required />
+          Chicken
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="lunch" value="Fish" />
+          Fish
+        </label>
+
+        <label class="radio-option">
+          <input type="radio" name="lunch" value="Vegetarian" />
+          Vegetarian
+        </label>
+      </div>
+
+      <div class="form-section">
+        <p class="section-label">Select Workshop Sessions (Check all that apply)</p>
+        <label class="check-option">
+          <input type="checkbox" name="sessions[]" value="Session 1" /> Session 1
+        </label>
+        <label class="check-option">
+          <input type="checkbox" name="sessions[]" value="Session 2" /> Session 2
+        </label>
+        <label class="check-option">
+          <input type="checkbox" name="sessions[]" value="Session 3" /> Session 3
+        </label>
+        <label class="check-option">
+          <input type="checkbox" name="sessions[]" value="Session 4" /> Session 4
+        </label>
+        <label class="check-option">
+          <input type="checkbox" name="sessions[]" value="Session 5" /> Session 5
+        </label>
+      </div>
+
+      <div class="form-group full">
+        <label for="notes">Special Requests or Notes</label>
+        <textarea 
+          id="notes"
+          name="notes"
+          placeholder="Dietary restrictions, accessibility needs, questions, etc."
+        ></textarea>
+      </div>
+
+      <button type="submit">Complete RSVP</button>
+    </form>
+  </main>
+  <footer>
+    <p>Copyright © 2026 NYC Tech Summit</p>
+  </footer>
+</body>
+</html>
